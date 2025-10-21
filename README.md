@@ -1,70 +1,139 @@
-# Getting Started with Create React App
+# Salary Prediction AI (FastAPI + React)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+An intelligent web application that predicts employee salaries using **Machine Learning**, built with a **FastAPI backend** and a **React frontend**.  
+It analyzes various employee attributes — such as education, experience, and performance — to predict salary range and growth potential.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## 🚀 Features
 
-### `npm start`
+✅ **AI-Powered Salary Prediction** — Predict salaries based on demographic and professional factors.  
+✅ **Employee Clustering** — Groups employees into performance clusters for HR analytics.  
+✅ **Interactive Frontend** — Clean and responsive form-based UI.  
+✅ **Fast Backend API** — Real-time predictions with FastAPI.  
+✅ **Easy Integration** — Modular design for scaling and deployment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Screenshots:
 
-### `npm test`
+Home Page
+<img width="1909" height="926" alt="Screenshot 2025-10-21 160813" src="https://github.com/user-attachments/assets/2fafb988-e961-46d5-ac4e-326d3141b59b" />
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Employee Form
+<img width="1909" height="918" alt="Screenshot 2025-10-21 160850" src="https://github.com/user-attachments/assets/bb6dd58e-700f-448f-8599-8363985b6f75" />
 
-### `npm run build`
+Predication
+<img width="1910" height="921" alt="Screenshot 2025-10-21 161252" src="https://github.com/user-attachments/assets/b28f5c29-a9ea-4aec-bc1e-0af190f328dc" />
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🧠 Tech Stack
 
-### `npm run eject`
+### **Frontend**
+- ⚛️ React (Vite or Create React App)
+- 🎨 Tailwind CSS
+- 🔄 Axios (API integration)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### **Backend**
+- 🐍 FastAPI (Python 3.10+)
+- 🧮 Scikit-learn
+- 🧠 Joblib
+- 🧰 Pandas, NumPy
+- 🌐 Uvicorn
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 🗂️ Project Structure
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```
+salary-ai/
+│
+├── backend/
+│ ├── main.py # FastAPI application
+│ ├── models/ # Trained ML & preprocessor files
+│ ├── routes/ # API routes
+│ ├── utils/ # Helper functions
+│ └── requirements.txt # Python dependencies
+│
+├── frontend/
+│ ├── src/ # React components & logic
+│ ├── public/ # Static assets
+│ ├── package.json # Frontend dependencies
+│ └── vite.config.js # Frontend build config
+│
+├── .gitignore
+└── README.md
+```
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Setup Instructions
 
-### Code Splitting
+### 🔹 1. Clone the Repository
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```
+git clone https://github.com/Prjhage/salary-ai.git
+cd salary-ai
+```
 
-### Analyzing the Bundle Size
+###  🔹 2. Backend Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+```
+cd backend
+python -m venv venv
+venv\Scripts\activate     # On Windows
+# OR
+source venv/bin/activate  # On Mac/Linux
 
-### Making a Progressive Web App
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+➡ Backend runs at: http://127.0.0.1:8000
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+###  🔹 3. Frontend Setup
 
-### Advanced Configuration
+Open another terminal and run:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```
+cd frontend
+npm install
+npm run dev
+```
+➡ Frontend runs at: http://localhost:5173
 
-### Deployment
+###  🔹 4. Connect Frontend & Backend
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Make sure both backend and frontend servers are running.
 
-### `npm run build` fails to minify
+In the React code, ensure your API base URL is:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```
+http://127.0.0.1:8000/predict/salary
+
+```
+
+###  🧩 Model Details
+
+Model Type: Regression (e.g., RandomForestRegressor / XGBoost)
+
+Feature Engineering: Encodes categorical variables, scales numeric ones
+
+Cluster Model: K-Means (for grouping employee growth potential)
+
+Output: Predicted salary + descriptive cluster label
+
+###  🧰 Future Enhancements
+
+🔹 Add authentication & HR dashboards
+
+🔹 Export predictions as downloadable reports
+
+🔹 Integrate with company HR databases
+
+🔹 Deploy backend on Render / frontend on Vercel
+
+
+
+
