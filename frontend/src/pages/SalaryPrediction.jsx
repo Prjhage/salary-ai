@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
   User,
-  Briefcase,
-  GraduationCap,
   Clock,
   TrendingUp,
   ArrowRight,
@@ -32,7 +30,6 @@ const SalaryPrediction = () => {
     DistanceFromHome: 10,
     PercentSalaryHike: 12,
     PerformanceRating: 3,
-    Gender: "Male", // Hidden field default
   });
 
   const [result, setResult] = useState(null);

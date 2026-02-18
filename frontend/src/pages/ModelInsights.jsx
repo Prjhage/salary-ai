@@ -1,9 +1,9 @@
 import React from "react";
-import { Brain, TrendingUp, Users, Target, Activity, ShieldCheck, Zap, BarChart3, PieChart as PieChartIcon } from "lucide-react";
+import { Users, Target, Activity, ShieldCheck, Zap, BarChart3 } from "lucide-react";
 import { motion } from "framer-motion";
 import {
   AreaChart, Area, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  BarChart, Bar, Cell, PieChart, Pie, RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar
+  BarChart, Cell, RadarChart, PolarGrid, PolarAngleAxis, Radar
 } from "recharts";
 
 const performanceData = [

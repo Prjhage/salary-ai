@@ -1,11 +1,9 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-  BarChart2,
   Brain,
   Users,
   Target,
-  Lightbulb,
   Briefcase,
   GraduationCap,
   TrendingUp,
