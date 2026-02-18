@@ -7,7 +7,7 @@ const API = axios.create({
 
 export const predictSalary = async (formData) => {
   try {
-    const response = await API.post("/predict/salary", formData);
+    const response = await API.post("/api/predict/salary", formData);
     console.log("✅ Response from backend:", response.data);
     return response.data;
   } catch (error) {
