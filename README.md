@@ -18,13 +18,14 @@ It analyzes various employee attributes — such as education, experience, and p
 ### Screenshots:
 
 Home Page
-<img width="1909" height="926" alt="Screenshot 2025-10-21 160813" src="https://github.com/user-attachments/assets/2fafb988-e961-46d5-ac4e-326d3141b59b" />
+<img width="1910" height="910" alt="Screenshot 2026-02-19 145313" src="https://github.com/user-attachments/assets/3f26f06a-1436-4827-a555-2d7c967cddc7" />
 
 Employee Form
-<img width="1909" height="918" alt="Screenshot 2025-10-21 160850" src="https://github.com/user-attachments/assets/bb6dd58e-700f-448f-8599-8363985b6f75" />
+<img width="1910" height="910" alt="image" src="https://github.com/user-attachments/assets/2d0003ac-c0ce-42d1-bfa7-fcde236feb61" />
 
-Predication
-<img width="1910" height="921" alt="Screenshot 2025-10-21 161252" src="https://github.com/user-attachments/assets/b28f5c29-a9ea-4aec-bc1e-0af190f328dc" />
+Model insights
+<img width="1910" height="910" alt="image" src="https://github.com/user-attachments/assets/bafc317d-de8f-44c4-90a8-9c4e5ffd5b9d" />
+
 
 
 
@@ -99,9 +100,9 @@ Open another terminal and run:
 ```
 cd frontend
 npm install
-npm run dev
+npm start
 ```
-➡ Frontend runs at: http://localhost:5173
+➡ Frontend runs at: http://localhost:3000
 
 ###  🔹 4. Connect Frontend & Backend
 
