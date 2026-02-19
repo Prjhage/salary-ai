@@ -18,7 +18,8 @@ It analyzes various employee attributes — such as education, experience, and p
 ### Screenshots:
 
 Home Page
-<img width="1910" height="910" alt="Screenshot 2026-02-19 145313" src="https://github.com/user-attachments/assets/3f26f06a-1436-4827-a555-2d7c967cddc7" />
+<img width="1910" height="910" alt="Screenshot 2026-02-19 155800" src="https://github.com/user-attachments/assets/c6ebd431-bb3d-4405-8021-f93ae746f769" />
+
 
 Employee Form
 <img width="1910" height="910" alt="image" src="https://github.com/user-attachments/assets/2d0003ac-c0ce-42d1-bfa7-fcde236feb61" />
